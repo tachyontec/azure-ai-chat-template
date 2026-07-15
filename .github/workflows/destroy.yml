@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "::error::You must type 'destroy' (lowercase, exact) into the confirm field. Got: '${{ github.event.inputs.confirm }}'"
           exit 1
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Check required inputs
         working-directory: ${{ github.workspace }}
         env:
